@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Welcome to git</h2>
-    <h3>subham</h3>
-    <h4>subhx method</h4>
-    <h5>subham</h5>
+
+    <div class="login-box">
+        <h2>For Test Login</h2>
+
+        <div class="input-box">
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+
+        <div class="input-box password-box">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <span class="toggle" onclick="togglePassword()">👁</span>
+        </div>
+
+        <button class="btn" onclick="login()">
+            <span id="btnText">Login</span>
+            <span class="loader" id="loader"></span>
+        </button>
+
+        <p class="message" id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
